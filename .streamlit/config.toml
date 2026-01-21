@@ -1,13 +1,18 @@
-[theme]
-primaryColor = "#6366F1"
-backgroundColor = "#FFFFFF"
-secondaryBackgroundColor = "#F8FAFC"
-textColor = "#1E293B"
-font = "sans serif"
-
 [server]
-headless = true
-port = 8501
-enableCORS = false
-enableXsrfProtection = false
+maxUploadSize = 2048  # 2GB in MB
+maxMessageSize = 2048  # 2GB in MB
 
+[server.fileWatcherType]
+# Use polling for better performance with large files
+type = "poll"
+
+[server.headless]
+# Enable headless mode for better performance
+headless = true
+
+[theme]
+primaryColor = "#0066FF"
+backgroundColor = "#F0F9FF"
+secondaryBackgroundColor = "#FFFFFF"
+textColor = "#0F172A"
+font = "Poppins"
